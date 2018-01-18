@@ -855,6 +855,7 @@ function MdDialogProvider($$interimElementProvider) {
       var themeCtrl = targetEl && targetEl.controller('mdTheme');
 
       if (!themeCtrl) {
+      options.hasTheme = (!!themeCtrl);
         return;
       }
 
